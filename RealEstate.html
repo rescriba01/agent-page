@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Real Estate Landing Page</title>
+    <link href="https://fonts.googleapis.com/ss?family=Arimo|Open+Sans:600|Roboto:500|Bitter|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <link rel="stylesheet" href="style/mediaqueries.css" type="text/css" />
+    <link rel="stylesheet" href="style/normalize.css" type="text/css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class=container>
+      <header role="banner" class="agent-page__header"></header>
+      <main role="main" class="content-wrap">
+        <section class="sect sect__head">
+          <h1 class="logo">McLennan &amp; Company</h1>
+          <a href="#main-menu" role="button" id="main-menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+          </a>
+          <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+            <a href="#main-menu-toggle" role="button" id="main-menu-close" class="menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-window-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Featured Listings</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Your Home's Value</a></li>
+              <li><a href="#">Contact Me</a></li>
+              <li><a href="#">Mortgage Calculator</a></li>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </section>
+        <section class="sect sect__info">
+          <h3>Welcome to the Pinergy Consumer Website</h3>
+          <p>Here you'll be able to obtain information on properties that have been matched to you by our automated system.</p>
+        </section>
+        <section class="sect sect__contact">
+          <div class="contain">
+            <div class="wrapper">
+              <div class="contacts">
+                <h3>Please feel free to contact me with any questions!</h3>
+                <ul>
+                  <li>Irving Caraballo</li>
+                  <li>Century 21 McLennan & Company</li>
+                  <li>188 Broadway Methuen MA 01844</li>
+                </ul>
+              </div>
+              <div class="form">
+                <h3>Send us a message</h3>
+                <form action="">
+                  <p>
+                    <label for="">Your name</label>
+                    <input type="text">
+                  </p>
+                  <p>
+                    <label for="">Skype</label>
+                    <input type="text">
+                  </p>
+                  <p>
+                    <label for="">Email Address</label>
+                    <input type="text">
+                  </p>
+                  <p>
+                    <label for="">Topic</label>
+                    <input type="text">
+                  </p>
+                  <p class="full-width">
+                    <label for="">Write your message</label>
+                    <textarea name="" id="" cols="30" rows="7"></textarea>
+                  </p>
+                  <p class="full-width">
+                    <button>Send</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer role="contentinfo" class="agent-page__footer">
+        <div class="agent-page__footer--flex">
+          <a class="footer--flex-child" href="#">Privacy Policy</a>
+          <a class="footer--flex-child" href="#">Copyright Policy</a>
+          <a class="footer--flex-child" href="#">Unsubscribe</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

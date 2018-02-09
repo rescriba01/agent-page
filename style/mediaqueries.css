@@ -1,0 +1,64 @@
+/* Media Queries
+----------------------- */
+
+/* Off-Canvas Menu
+ Larger screen styling
+ Horizontal menu
+*/
+@media (min-width: 625px) {
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+		left: auto;
+		top: auto;
+		height: auto;
+  }
+  .main-menu ul {
+    display: flex;
+    justify-content: space-around;
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  .main-menu li {
+    text-align: center;
+  }
+  .main-menu a {
+    color: #F0AD00;
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: #ffba49;
+    text-decoration: underline;
+  }
+/* Form on larger screens */
+  .contain {
+    padding: 0;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+  .agent-page__footer--flex {
+    justify-content: center;
+  }
+  .footer--flex-child:first-child, .footer--flex-child:nth-child(3n) {
+    padding: 0 .5rem;
+  }
+}
